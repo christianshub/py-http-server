@@ -6,6 +6,7 @@ Simple http server using python3's built-in http.server module with a PUT extens
 
 1) Run `main.py` on your server machine that should receive files
 1) Test locally: `curl -i -X PUT --upload-file path/to/your/file.txt http://localhost:8000`
+1) Test on internal network: `ifconfig | grep inet` replace localhost
 
 ## Known issues
 

@@ -2,7 +2,7 @@
 
 Simple http server using python3's built-in [http.server](https://docs.python.org/3/library/http.server.html) module with a PUT extenstion to be able to upload/send files to a hosting server quickly.
 
-**Note** that the `http.server` is not suited for production evironments since it only implements basic security. There are many prod ready alternatives - one I found suitable was [gunicorn](https://gunicorn.org/).
+**Note** that the `http.server` is not suited for production evironments since it only implements basic security. This project meets my usecase requirements but may not fullfill yours. There are many prod ready alternatives - one I found suitable was [gunicorn](https://gunicorn.org/).
 
 ## How-to
 

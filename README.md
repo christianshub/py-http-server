@@ -1,6 +1,8 @@
 # simple-http-server
 
-Simple http server using python3's built-in http.server module with a PUT extenstion to be able to upload/send files to a hosting server quickly.
+Simple http server using python3's built-in [http.server](https://docs.python.org/3/library/http.server.html) module with a PUT extenstion to be able to upload/send files to a hosting server quickly.
+
+**Note** that the `http.server` is not suited for production evironments since it only implements basic security. There are many prod ready alternatives - one I found suitable was [gunicorn](https://gunicorn.org/).
 
 ## How-to
 
@@ -12,7 +14,7 @@ Simple http server using python3's built-in http.server module with a PUT extens
 
 ### Blocked firewall
 
-In case the port 8000 is blocked in your firewall, you have to open it.
+In case the port 8000 is blocked in your firewall, you have to open it. 
 
 For example, on RHEL/CentOS/Fedora, open port 8000 as shown below.
 
@@ -21,7 +23,7 @@ $ firewall-cmd --permanent --add-port=8000/tcp
 $ firewall-cmd --reload
 ```
 
-On Debian, Ubuntu you can allow the port as shown below.
+On Debian, Ubuntu you can allow the port as shown below. 
 
 `$ sudo ufw allow 8000`
 

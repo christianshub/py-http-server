@@ -1,16 +1,11 @@
-# py-http-server
+# simple-http-server
 
-Simple http server using pythons built in `http.server` with a `PUT` extenstion to be able to upload/send files to a hosting server quickly.
+Simple http server using python3's built in `http.server` with a `PUT` extenstion to be able to upload/send files to a hosting server quickly.
 
 ## How-to
 
 1) Run `main.py` on your server machine that should receive files
-1) Test locally by running `curl -i -X PUT --upload-file path/to/your/file.txt http://localhost:8000` 
-
-## Test cases
-
-1) Run `test/test_server.sh`
-1) Run `test/test_calls.sh` to validate tests are OK
+1) Test locally: `curl -i -X PUT --upload-file path/to/your/file.txt http://localhost:8000`
 
 ## Known issues
 

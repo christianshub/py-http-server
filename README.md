@@ -1,6 +1,6 @@
 # simple-http-server
 
-Simple http server using python3's built in `http.server` with a `PUT` extenstion to be able to upload/send files to a hosting server quickly.
+Simple http server using python3's built-in http.server module with a PUT extenstion to be able to upload/send files to a hosting server quickly.
 
 ## How-to
 
